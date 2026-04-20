@@ -35,6 +35,11 @@ typedef struct {
 // ------------------------------------------------------------------------
 
 
+typedef struct {
+    double x;
+    double y;
+    double z;
+} vec3_t;
 
 /**
  * @brief Robot body velocity (twist).
@@ -45,8 +50,8 @@ typedef struct {
  * - angular: rotational velocity around vertical axis (rad/s)
  */
 typedef struct {
-	double linear;			// m/s
-	double angular;			// rad/s
+	vec3_t linear;			// m/s
+	vec3_t angular;			// rad/s
 }dd_twist_t;
 // ------------------------------------------------------------------------
 

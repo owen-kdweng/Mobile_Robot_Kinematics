@@ -28,8 +28,8 @@ dd_status_t dd_forward_kinematics(
         return DD_ERROR;
     }
 
-    out_twist->linear = linear;
-    out_twist->angular = angular;
+    out_twist->linear.x = linear;
+    out_twist->angular.z = angular;
 
     return DD_OK;
 }
@@ -52,8 +52,8 @@ dd_status_t dd_inverse_kinematics(
 
     const double r = params->wheel_radius;
     const double L = params->wheel_base;
-    const double v = twist->linear;
-    const double w = twist->angular;
+    const double v = twist->linear.x;
+    const double w = twist->angular.z;
 
     const double left  = (v - 0.5 * L * w) / r;
     const double right = (v + 0.5 * L * w) / r;
