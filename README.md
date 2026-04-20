@@ -55,7 +55,7 @@ make
 | Function                  | Description                                   |
 | --------------------- | ------------------------------------------------- |
 | `dd_params_t`         | Robot physical parameters (wheel radius, base)    |
-| `vec3_t`              | A set of three vectors                            |
+| `vec3_t`              | 3D vector (x, y, z)                               |
 | `dd_twist_t`          | Robot velocity (vec3_t linear, vec3_t angular)    |
 | `dd_wheel_speed_t`    | Wheel angular velocities (left, right)            |
 | `dd_status_t`         | Return status codes (OK / ERROR / INVALID PARAM)  |
