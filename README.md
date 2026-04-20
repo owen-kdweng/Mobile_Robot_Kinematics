@@ -1,4 +1,4 @@
-# C Mobile Robot Kinematics Library (Differential Drive)
+# C Mobile Robot Kinematics Library
 
 C language library for kinematics of wheeled robots.
 
